@@ -1,0 +1,11 @@
+#Realmenu
+bindsym $mod+d exec $term --class=launcher --title realmenu -e ~/.config/realmenu/realmenu.sh
+for_window [title="^realmenu$"] floating enable 
+for_window [title="^realmenu$"] focus
+for_window [title="^realmenu$"] resize set height 150px
+for_window [title="^realmenu$"] resize set width 400px
+
+#                                  class              border     background    text      indicator  child_border
+#for_window [app_id="realmenu"] client.focused          #00313DFF   #002129FF   #618697FF   #268BD2FF   #00313DFF
+#for_window [app_id="realmenu"] client.focused_inactive #00313DFF   #002129FF   #618697FF   #268BD2FF   #00313DFF
+#for_window [app_id="realmenu"] client.unfocused        #00000000   #00000000   #00000000   #00000000   #00000000
